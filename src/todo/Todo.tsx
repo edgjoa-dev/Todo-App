@@ -1,7 +1,8 @@
+import { TodoProvider } from "./context/TodoProvider"
 
 export const Todo = () => {
     return (
-        <div>
+        <TodoProvider>
             <h1>Todo</h1>
             <ul>
                 <li>todo 1</li>
@@ -9,6 +10,6 @@ export const Todo = () => {
                 <li>todo 3</li>
                 <li>todo 4</li>
             </ul>
-        </div>
+        </TodoProvider>
     )
 }
