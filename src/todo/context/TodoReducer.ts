@@ -3,7 +3,8 @@ import { Todo, TodoState } from "../interfaces/interfaces";
 
 type TodoAction =
     | { type: 'addTodo', payload: Todo }
-    | { type: 'removeTodo', payload: { id: String } }
+    | { type: 'removeTodo', payload: { id: String }}
+    | { type: 'toggleTodo', payload: { id: String }}
 
 
 
