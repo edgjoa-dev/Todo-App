@@ -1,5 +1,3 @@
-import { useContext } from "react"
-import { TodoContext } from '../context/TodoContext';
 import { TodoItem } from "./TodoItem";
 import { useTodos } from '../../hooks/useTodos';
 
@@ -14,7 +12,6 @@ export const TodoList = () => {
 
     return (
         <div>
-            TodoList
             {
                 todos.map( todo =>
                     <TodoItem
