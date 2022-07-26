@@ -8,16 +8,14 @@ interface props {
 
 export const TodoItem = ({ todo }: props) => {
 
+    // const { toggleTodo } = useContext(TodoContext);
     const { toggleTodo } = useContext(TodoContext);
 
-    const handleDbClick = () => {
-        toggleTodo(todo.id);
-    }
 
     return (
 
             <li
-            onDoubleClick={handleDbClick}
+            onDoubleClick={()=> toggleTodo(todo.id)}
                 style={{
                     textDecoration: todo.completed ? 'line-through' : '',
                     cursor: 'pointer'
