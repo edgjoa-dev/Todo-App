@@ -7,7 +7,7 @@ type TodoAction =
 
 
 
-export const TodoReducer = (state: TodoState, action: TodoAction): TodoState => {
+export const todoReducer = (state: TodoState, action: TodoAction): TodoState => {
 
     switch (action.type) {
         case 'addTodo':
